@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Set up pymongo connection and link db
 client = pymongo.MongoClient('mongodb://localhost:27017')
 db = client.mission_to_mars_2
-mars_listings = db.listings
+listings = db.listings
 
 @app.route("/")
 def index():
